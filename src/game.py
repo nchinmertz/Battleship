@@ -9,7 +9,7 @@ import random
 
 
 class Game(object):
-    def __init__(self, config_file_path: str, game_seed=542) -> None:
+    def __init__(self, config_file_path: str = "configs/classic_game.txt", game_seed=542) -> None:
         # The game_seed is an optional parameter used for test randomness so the same "random" numbers are used
         config = GameConfig(config_file_path)
         random.seed(game_seed)
