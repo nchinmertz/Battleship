@@ -1,6 +1,21 @@
-A simulation of the game Battleship with multiple ways to set up the game as well as types of players.
+This program simulates the classic Battleship game with a variety of configurations and player types.
 
-The `configs` file shows all the different types of game set ups. This can be changed in the main.py file by changing the pathname parameter. It is currently set to `classc_game.txt`.
+#### Features 
+* Multiple Configurations: The `configs` file contains several setups for different game configurations. A coustom configuration format can be created using the following format:
+    ```
+    num_rows num_cols
+    ship_name ship_length
+    ship_name ship_length
+    ...
+    ```
+  Modify the `config_file_path` parameter in `main.py` (line 5) fto chose a different configuration. The default is `classc_game.txt`
+* Various Player Types: Choose which player types are going to play
+  * Human: For an actual human to play
+  * Cheating Computer: Uses opponent's board information to always make an accurate hit
+  * Search and Destroy: Strategically hunts around a known hit
+  * Random: Makes randoms guesses
+#### Development
+This project was developed with object-oriented programming principles, leveraging inheritance is used to create the different player types. This approach allows for customization and flexability in gameplay.
 
-The type of players can be chosen once the program has started. There are four different options for players, a human player or three different computer players. The three computer players are cheating which knows its opponents board, search and destroy which will continue to make hits around a known hit, and random which will make random guesses. Inheritance is used to create this different type of players. The first layer differentiating between a human player and a computer, the second layer being for all the different types of computer players.
-
+#### To Run
+Execute `main.py` using Python3. Ensure all dependencies are installed before running.
