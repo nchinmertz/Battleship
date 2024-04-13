@@ -15,7 +15,7 @@ This program simulates the classic Battleship game with a variety of configurati
   * Search and Destroy: Strategically hunts around a known hit
   * Random: Makes randoms guesses
 #### Development
-This project was developed with object-oriented programming principles, leveraging inheritance is used to create the different player types. This approach allows for customization and flexability in gameplay.
+This project was developed with object-oriented programming principles, inheritance is used to create the different player types. This approach allows for customization and flexability in gameplay.
 
 #### To Run
 Execute `main.py` using Python3. Ensure all dependencies are installed before running.
